@@ -1,0 +1,11 @@
+{
+  "display_name": "剧本多角色语音（旁白 / 多角色分音色）",
+  "loading_order": 2,
+  "requires": [],
+  "optional": [],
+  "js": "index.js",
+  "css": "style.css",
+  "author": "哈基米 for 咲川",
+  "version": "1.0.0",
+  "homePage": ""
+}
