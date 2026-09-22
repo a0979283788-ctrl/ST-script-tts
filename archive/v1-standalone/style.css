@@ -1,0 +1,104 @@
+/* 剧本多角色语音 ST-Script-TTS 样式  by 哈基米 */
+.scue-wrap {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.scue-cue {
+  border: 1px solid rgba(160, 120, 255, 0.28);
+  background: rgba(120, 90, 200, 0.10);
+  border-radius: 10px;
+  padding: 6px 8px 8px;
+  transition: border-color .2s, background .2s, box-shadow .2s;
+}
+.scue-cue[data-state="loading"] {
+  border-color: rgba(246, 255, 0, 0.7);
+  box-shadow: 0 0 8px rgba(246, 255, 0, 0.35);
+}
+.scue-cue[data-state="playing"] {
+  border-color: rgba(0, 255, 174, 0.75);
+  background: rgba(0, 200, 150, 0.12);
+  box-shadow: 0 0 10px rgba(0, 255, 174, 0.30);
+}
+.scue-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+.scue-tag {
+  font-size: 11px;
+  line-height: 1;
+  padding: 2px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.scue-tag.is-narr {
+  color: #c9b8ff;
+  background: rgba(150, 120, 255, 0.22);
+  border: 1px solid rgba(160, 130, 255, 0.4);
+}
+.scue-tag.is-role {
+  color: #9fe9ff;
+  background: rgba(90, 170, 255, 0.18);
+  border: 1px solid rgba(110, 180, 255, 0.4);
+}
+.scue-btn {
+  cursor: pointer;
+  user-select: none;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 11px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  transition: background .15s, transform .1s;
+}
+.scue-btn:hover { background: rgba(255, 255, 255, 0.26); }
+.scue-btn:active { transform: scale(0.92); }
+.scue-cue[data-state="loading"] .scue-btn { color: #f6ff00; }
+.scue-cue[data-state="playing"] .scue-btn { color: #00ffae; }
+.scue-audio {
+  width: 100%;
+  height: 32px;
+  display: block;
+}
+.scue-audio:focus { outline: none; }
+
+/* 设置面板 */
+.scue-panel { margin: 8px 0; }
+.scue-panel .inline-drawer-header small { font-weight: 400; opacity: .7; margin-left: 8px; }
+.scue-title { font-size: 13px; font-weight: 600; opacity: .9; margin: 6px 0 4px; }
+.scue-kv { display: flex; align-items: center; gap: 8px; margin: 4px 0; }
+.scue-kv label { flex: 0 0 84px; font-size: 13px; opacity: .85; }
+.scue-kv input, .scue-kv select { flex: 1 1 auto; min-width: 0; }
+.scue-btns { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+#scue_test_res { font-size: 12px; word-break: break-all; }
+.scue-role-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 4px 0;
+  flex-wrap: nowrap;
+}
+.scue-role-row input, .scue-role-row select { min-width: 0; }
+.scue-r-name { flex: 0 0 90px; }
+.scue-r-voice { flex: 1 1 110px; }
+.scue-r-custom { flex: 1 1 120px; }
+.scue-r-del {
+  cursor: pointer;
+  flex: 0 0 auto;
+  opacity: .7;
+  padding: 0 4px;
+}
+.scue-r-del:hover { opacity: 1; color: #ff6b6b; }
+#scue_regex {
+  width: 100%;
+  font-family: monospace;
+  font-size: 12px;
+}

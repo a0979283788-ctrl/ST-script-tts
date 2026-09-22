@@ -1,11 +1,11 @@
 {
-  "display_name": "剧本多角色语音（旁白 / 多角色分音色）",
-  "loading_order": 2,
+  "display_name": "声林 · 多平台语音（TTS）+ 剧本分段",
+  "loading_order": 1,
   "requires": [],
   "optional": [],
   "js": "index.js",
   "css": "style.css",
-  "author": "哈基米 for 咲川",
-  "version": "1.0.0",
-  "homePage": ""
+  "author": "沐风的狗子 / lynn33-2728 + 剧本改造 by 哈基米",
+  "version": "2.3.0-script",
+  "homePage": "https://gitee.com/lynn/sound-forest-TTS"
 }
